@@ -1,0 +1,38 @@
+module.exports = {
+  root: true,
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    project: ["tsconfig.json"],
+    tsconfigRootDir: __dirname,
+    createDefaultProgram: true,
+  },
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:prettier/recommended",
+  ],
+  env: {
+    browser: true,
+    es6: true,
+    jest: true,
+  },
+  plugins: ["react", "@typescript-eslint", "prettier"],
+  rules: {
+    "@typescript-eslint/semi": ["error"],
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+    "@typescript-eslint/no-explicit-any": 1,
+    "no-case-declarations": 0,
+    "react/prop-types": 0,
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+  },
+  settings: {
+    react: {
+      pragma: "React",
+      version: "detect",
+    },
+  },
+};
