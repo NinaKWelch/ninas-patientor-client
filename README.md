@@ -2,7 +2,7 @@
 
 Full Stack Open 2020 Project
 
-This repository contains clinet files, the server files are at [ninas-patientor](https://github.com/NinaKWelch/ninas-patientor)
+This repository contains client files, the server files are at [ninas-patientor](https://github.com/NinaKWelch/ninas-patientor)
 
 ## Website
 
